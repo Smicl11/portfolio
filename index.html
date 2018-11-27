@@ -26,6 +26,26 @@
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-WRTLT42');</script>
     <!-- End Google Tag Manager -->
+    <script>
+    ga_trackers=[];
+    ga.getAll().forEach(function(x,i){
+    ga_trackers.push(x.get('name'))});
+    ga_trackers.forEach(
+    function(gaName){
+    ga(gaName + '.require', 'Clearbit', {
+    "mapping":{"companyName":"dimension2",
+    "companyDomain":"dimension8",
+    "companyTags":"dimension18",
+    "companyType":"dimension11",
+    "companyEmployeesRange":"dimension17",
+    "companyAlexaRank":"dimension19",
+    "companyTech":"dimension20"
+    }});
+    });
+    <\script>
+
+    <script async src="https://ga.clearbit.com/v1/ga.js?authorization=pk_pk_0c34dda66b5adc7627d3218cd8113716">
+    </script>
 
     <title>Bryan Smith</title>
 
