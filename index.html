@@ -9,16 +9,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- G-Suite domain verifi -->
-      <meta name="google-site-verification" content="f_seVQ251ZfEHchGjDh-_DRcFpI5V8j5HXlZNv4NvIs" />
+    <meta name="google-site-verification" content="f_seVQ251ZfEHchGjDh-_DRcFpI5V8j5HXlZNv4NvIs" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129883579-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129883579-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        gtag('config', 'UA-129883579-1');
-      </script>
+      gtag('config', 'UA-129883579-1');
+    </script>
+
     <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -26,25 +27,24 @@
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-WRTLT42');</script>
     <!-- End Google Tag Manager -->
+    <!-- Clearbit JS -->
     <script>
-    ga_trackers=[];
-    ga.getAll().forEach(function(x,i){
-    ga_trackers.push(x.get('name'))});
-    ga_trackers.forEach(
-    function(gaName){
-    ga(gaName + '.require', 'Clearbit', {
-    "mapping":{"companyName":"dimension2",
-    "companyDomain":"dimension8",
-    "companyTags":"dimension18",
-    "companyType":"dimension11",
-    "companyEmployeesRange":"dimension17",
-    "companyAlexaRank":"dimension19",
-    "companyTech":"dimension20"
-    }});
-    });
-    <\script>
-
-    <script async src="https://ga.clearbit.com/v1/ga.js?authorization=pk_pk_0c34dda66b5adc7627d3218cd8113716">
+      !function(){var clearbit=window.clearbit=window.clearbit||[];if(!clearbit.initialize)if(clearbit.invoked)window.console&&console.error&&console.error("Clearbit snippet included twice.");else{clearbit.invoked=!0;clearbit.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];clearbit.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);clearbit.push(e);return clearbit}};for(var t=0;t<clearbit.methods.length;t++){var e=clearbit.methods[t];clearbit[e]=clearbit.factory(e)}clearbit.load=function(t){var e=document.createElement("script");e.async=!0;e.src=("https://js.clearbit.com/v1/"+t+"/clearbit.min.js");var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};clearbit.SNIPPET_VERSION="3.1.0";
+      clearbit.load('pk_0c34dda66b5adc7627d3218cd8113716');
+      clearbit.page();
+      }}();
+    </script>
+    <script>
+      ga_trackers=['112818clearbit'];
+      ga_trackers.forEach(function(gaName){
+      ga(gaName + '.require', 'Clearbit', {
+      "mapping":{"companyName":"dimension2",
+      "companyDomain":"dimension3",
+      "companyType":"dimension1",
+      "companyIndustry":"dimension4",
+      "companyEstimatedAnnualRevenue":"dimension5"
+      }});
+      });
     </script>
 
     <title>Bryan Smith</title>
